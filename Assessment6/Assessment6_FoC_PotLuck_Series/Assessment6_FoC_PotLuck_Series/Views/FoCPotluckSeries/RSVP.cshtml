@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "RSVP";
+}
+
+<link href="/css/styles.css" rel="stylesheet" />
+
+<div class="RSVPBox">
+    <h2>RSVP</h2>
+</div>
+<div>
+    @ViewData["Message"]
+</div>
+
+<div class="RSVPForm">
+    <form method="post" action="/FocPotluckSeries/RSVPThankYou">
+        First Name:    <input type="text" name="FirstName" /><br />
+        Last Name:     <input type="text" name="LastName" /><br />
+        Email Address: <input type="email" name="EmailAddress" /><br />
+        <label for="DateAttending">Date Attending:</label>
+        <select name="DateAttending" id="DateAttending">
+            <option value="">Choose a date:</option>
+            <option value="9/11/2021 1:00 PM">9/11/2021 1:00 PM</option>
+            <option value="9/12/2021 1:00 PM">9/12/2021 1:00 PM</option>
+            <option value="9/18/2021 12:00 PM">9/18/2021 12:00 PM</option>
+            <option value="9/19/2021 12:00 PM">9/19/2021 12:00 PM</option>
+            <option value="9/25/2021 7:00 PM">9/25/2021 7:00 PM</option>
+            <option value="9/26/2021 4:00 PM">9/26/2021 4:00 PM</option>
+        </select><br />
+        Guest Name: <input type="text" name="GuestName" /><br />
+        <input type="submit" />
+    </form>
+</div>

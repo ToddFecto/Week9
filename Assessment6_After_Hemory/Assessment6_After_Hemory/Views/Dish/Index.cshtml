@@ -1,0 +1,40 @@
+﻿@model BringADish
+
+@{
+    ViewBag.Title = "Dish Form";
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm("Index", "Dish", FormMethod.Post))
+{
+<table>
+    <tr>
+        <td>Name:</td>
+        <td>@Html.TextBoxFor(m => m.Name)</td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td>
+        <td>
+            <input type="tel" id="PhoneNumber" name="PhoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><small>Format: 123-456-7890</small>
+        </td>
+    </tr>
+    <tr>
+        <td>Category:</td>
+        <td>
+            @Html.DropDownListFor(m => m.Category, Model.Categories, "- Select a category -", new { @class = "form-control" })
+        </td>
+    </tr>
+    <tr>
+        <td>Dish Name:</td>
+        <td>@Html.TextBoxFor(m => m.DishName)</td>
+        <td>@Html.ValidationMessageFor(m => m.DishName)</td>
+    </tr>
+    <tr>
+        <td>Dish Description:</td>
+        <td>@Html.TextBoxFor(m => m.DishDescription)</td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="Submit" /></td>
+    </tr>
+</table>
+}

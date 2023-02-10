@@ -1,0 +1,13 @@
+C:\Dev\Week9\Week9\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.exe
+C:\Dev\Week9\Week9\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.deps.json
+C:\Dev\Week9\Week9\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.runtimeconfig.json
+C:\Dev\Week9\Week9\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.runtimeconfig.dev.json
+C:\Dev\Week9\Week9\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.dll
+C:\Dev\Week9\Week9\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.pdb
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.csprojAssemblyReference.cache
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.AssemblyInfoInputs.cache
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.AssemblyInfo.cs
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.csproj.CoreCompileInputs.cache
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.dll
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.pdb
+C:\Dev\Week9\Week9\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.genruntimeconfig.cache

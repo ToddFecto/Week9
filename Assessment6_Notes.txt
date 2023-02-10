@@ -1,0 +1,30 @@
+======================Assessment 6 Notes From MVC Review========================
+Add:
+using Microsoft.AspNetCore.Mvc.Rendering; // Used for HtmlHelpers
+using System.Collections.Generic;
+
+In Model for RSVP/TeamMember
+public IEnumerable<SelectListItem> Dates { get; set; }
+
+=============In Controller================
+//Resource: https://nimblegecko.com/using-simple-drop-down-lists-in-ASP-NET-MVC/
+        private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<string> elements)
+        {
+            var selectList = new List<SelectListItem>();
+            foreach (var element in elements)
+            {
+                selectList.Add(new SelectListItem
+                {
+                    Value = element,
+                    Text = element
+                });
+            }
+            return selectList;
+        }
+
+====For HtmlHelpers==============
+https://www.tutorialsteacher.com/mvc
+
+
+@Html.TextBoxFor(m => m.PhoneNumber, new { @placeholder = "123-456-7890" })
+<td>@Html.ValidationMessageFor(m => m.PhoneNumber)</td>

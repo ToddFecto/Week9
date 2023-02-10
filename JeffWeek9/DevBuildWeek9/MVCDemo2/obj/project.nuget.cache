@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KUQ5UvtHxq8QstsT7Uv1lZlm5++8z/C2Rsbt88E+CrmTgtldCz/xukuEkPFzBpdTnrdQoDzzgWEtZlapKEzg+g==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Week9\\JeffWeek9\\DevBuildWeek9\\MVCDemo2\\MVCDemo2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tfecto\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

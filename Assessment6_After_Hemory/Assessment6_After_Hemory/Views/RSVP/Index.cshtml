@@ -1,0 +1,40 @@
+﻿@model TeamMember
+
+@{
+    ViewBag.Title = "RSVP Form";
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm("Index", "RSVP", FormMethod.Post))
+ {
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td>@Html.TextBoxFor(m => m.FirstName)</td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td>@Html.TextBoxFor(m => m.LastName)</td>
+            <td>@Html.ValidationMessageFor(m => m.LastName)</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>@Html.TextBoxFor(m => m.EmailAddress, new { @placeholder = "mail@place.com" })</td>
+            <td>@Html.ValidationMessageFor(m => m.EmailAddress)</td>
+        </tr>
+        <tr>
+            <td>Date Attending:</td>
+            <td>
+                @Html.DropDownListFor(m => m.DateAttending, Model.Dates, "- Please select a date -", new { @class = "form-control" })
+        </td>
+        </tr>
+        <tr>
+            <td>Guest Name:</td>
+            <td>@Html.TextBoxFor(m => m.GuestName)</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+
+    </table>
+ }
